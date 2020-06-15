@@ -1,0 +1,134 @@
+@font-face{
+	font-family: 'Calibri';
+	src:url('fonts/calibri.ttf');
+}
+@font-face{
+	font-family: 'AurulentSans-Bold';
+	src:url('fonts/AurulentSans-Bold.otf');
+}
+
+@font-face{
+	font-family: 'AurulentSans-Regular';
+	src:url('fonts/AurulentSans-Regular.otf');
+}
+@font-face{
+	font-family:'LiberationSans-Regular';
+	src:url('fonts/LiberationSans-Regular.ttf');
+}
+@font-face{
+	font-family:'HelveticaNeue-Thin';
+	src:url('fonts/HelveticaNeue-Thin.otf');
+}
+*{margin:0;padding:0;}
+body{
+	font-size: 12px;
+	padding: 30px 0px;
+	line-height: 18px;
+	background: #fff;
+	color: #000;
+}
+
+table{
+	margin-left: -5px;
+}
+
+td{
+	padding:0px 5px;
+}
+
+.container{
+	width: 960px;
+	margin: 0 auto;
+}
+.id_card{
+	width: 450px;
+	height: 285px;
+	border: 1px solid #aaa;
+	background:url('images/bg.png') no-repeat scroll center center #fff;
+	float: left;
+	margin: 14px;
+}
+.id_header{
+	background:#009FD7;
+	background: -moz-linear-gradient(right,#CFE7F6,#009FD7);
+	height: 62px;
+	position: relative;
+	
+}
+.id_header h4{
+	padding-top:35px; 
+	color: #B71410;
+	padding-left:100px;
+	font-family: Calibri;
+	font-size: 26px;
+	font-weight: normal;
+}
+.id_logo{
+	position:absolute;
+	top: 27px;
+	left: 10px; 
+}
+.id_logo img{
+	width: 180px;
+}
+.id_content{
+	position: relative;
+	margin-top:5px;
+	padding: 10px;
+	padding-bottom:0px; 
+	overflow: hidden;
+}
+.id_text{
+	padding-top:45px;
+	font-family: 'AurulentSans-Regular';
+	overflow: hidden;
+	font-size: 16px;
+	line-height: 20px;
+}
+.id_photo{
+	position: absolute;
+	right: 10px;
+	top: 94px;
+}
+.id_photo img{
+	width: 90px;
+	border:3px solid #CFE7F6;
+}
+.id_signature{
+	text-align: right;
+	padding-right: 10px;
+	overflow: hidden;
+}
+.id_signature span{
+	border-top: 1px solid #666;
+	color: #000;
+	overflow: hidden;
+	font-family:'HelveticaNeue-Thin';
+	font-size: 13px;
+	letter-spacing: 1px;
+	line-height: 18px;
+}
+
+.id_footer{
+	overflow: hidden;
+	background:#009FD7;
+	background: -moz-linear-gradient(right,#CFE7F6,#009FD7);
+	margin-top: 2px;
+	height:30px;
+	text-align: center;
+}
+
+.id_footer p{
+	font-family:'LiberationSans-Regular';
+	letter-spacing: 6px;
+	font-size: 16px;
+	padding-top:5px;
+}
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #id_card * {
+    visibility: visible;
+  }
+}

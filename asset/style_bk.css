@@ -1,0 +1,79 @@
+@font-face{
+	font-family: 'segoeui';
+	src:url('fonts/segoeui.ttf');
+}
+
+@font-face{
+	font-family:'LiberationSans-Regular';
+	src:url('fonts/LiberationSans-Regular.ttf');
+}
+
+*{margin:0;padding:0;}
+body{
+	font-size: 14px;
+	line-height: 20px;
+	padding: 30px 0px;
+	line-height: 18px;
+	background: #fff;
+	color: #000;
+}
+h2{
+font-size:16px;
+}
+strong{
+	color: #006A8F; 
+	font-size:16px;
+}
+.container{
+	width: 960px;
+	margin: 0 auto;
+}
+.id_card_bk{
+	width: 450px;
+	height: 285px;
+	margin: 0 auto;
+	border: 1px solid #aaa;
+	background:url('images/bg_bk.png') no-repeat scroll center center #fff;
+	float: left;
+	margin: 14px;
+}
+.id_card_content{
+	padding:10px 15px 0px 15px;
+	margin-top: 5px;
+	overflow: hidden;
+}
+.id_card_bk_left{
+	float: left;
+	font-family:'LiberationSans-Regular';
+}
+.id_card_bk_left h2{
+	color: #006A8F;
+}
+.id_card_bk_right{
+	float: right;
+	font-family:'segoeui';
+	text-align: right;
+	font-size: 12px;
+}
+.id_card_bk_right h2{
+	color: #B70E0C;
+}
+.address{
+	margin:6px 0px;
+}
+
+.id_card_footer{
+	overflow: hidden;
+	background:#019FD7;
+	color: #fff;
+	height: 30px;
+	margin-top: 0px;
+}
+.id_card_footer p{
+	
+	font-family:'LiberationSans-Regular';
+	letter-spacing: 3px;
+	font-size: 16px;
+	text-align: center;
+	padding-top: 4px;
+}

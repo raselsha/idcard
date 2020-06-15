@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Id Card</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+</head>
+<body>
+	<a href="id_card_front.html">Front side</a>
+	<a href="id_card_back.html">Back side</a>
+	<div class="container">
+		<div id="id_card">
+			<div class="id_card" >
+				<div class="id_header">
+					<div class="id_logo">
+						<img src="images/logo.png">
+					</div>
+					<h4>
+						Runner Cyberlink Limited
+					</h4>
+					<div class="id_photo">
+						<img src="images/shahadat.jpg">
+					</div>
+				</div>
+				
+				<div class="id_content">
+					<div class="id_text">
+						<table>
+							<tr>
+								<td>Name</td>
+								<td>:</td>
+								<td>Alauddin</td>
+							</tr>
+							<tr>
+								<td>Id No</td>
+								<td>:</td>
+								<td>019282</td>
+							</tr>
+							<tr>
+								<td>Program</td>
+								<td>:</td>
+								<td>Web app Development</td>
+							</tr>
+							<tr>
+								<td>Batch</td>
+								<td>:</td>
+								<td>01</td>
+							</tr>
+							<tr>
+								<td>Validity</td>
+								<td>:</td>
+								<td>Aug - Dec, 2016</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="id_signature">
+					<span>Authorized Signature</span>
+				</div>
+				<div class="id_footer">
+					<p>STUDENT</p>
+				</div>
+			</div>
+
+			<div class="id_card" >
+				<div class="id_header">
+					<div class="id_logo">
+						<img src="images/logo.png">
+					</div>
+					<h4>
+						Runner Cyberlink Limited
+					</h4>
+					<div class="id_photo">
+						<img src="images/shahadat.jpg">
+					</div>
+				</div>
+				
+				<div class="id_content">
+					<div class="id_text">
+						<table>
+							<tr>
+								<td>Name</td>
+								<td>:</td>
+								<td>Alauddin</td>
+							</tr>
+							<tr>
+								<td>Id No</td>
+								<td>:</td>
+								<td>019282</td>
+							</tr>
+							<tr>
+								<td>Program</td>
+								<td>:</td>
+								<td>Web app Development</td>
+							</tr>
+							<tr>
+								<td>Batch</td>
+								<td>:</td>
+								<td>01</td>
+							</tr>
+							<tr>
+								<td>Validity</td>
+								<td>:</td>
+								<td>Aug - Dec, 2016</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="id_signature">
+					<span>Authorized Signature</span>
+				</div>
+				<div class="id_footer">
+					<p>STUDENT</p>
+				</div>
+			</div>
+			
+		</div>
+		<center><button onclick="print()">Print</button></center>
+	</div>
+	<script type="text/javascript">
+		function print() {
+			html2canvas(document.body,{
+			   onrendered:function(canvas){
+			      document.body.appendChild(canvas);
+			   }
+			});
+		}
+	</script>
+</body>
+</html>
